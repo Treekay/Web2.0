@@ -1,0 +1,132 @@
+/* page */
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: "Century Gothic", sans-serif;
+}
+
+h1, p {
+  text-align: center;
+}
+
+/* bar */
+#score-field {
+  position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 400px;
+  height: 70px;
+
+  font-size: 13px;
+}
+
+button {
+  height: 32px;
+
+  border-radius: 20px;
+  outline: none;
+  background-color: white;
+
+  font-size: 13px;
+  font-family: "Century Gothic", sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#control {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#time-block {
+  position: absolute;
+  margin-top: 5px;
+  right: 0;
+  top: 0;
+}
+
+#status {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 165px;
+  height: 22px;
+
+  border-width: 3px;
+  border-radius: 20px;
+  border-style: groove;
+
+  font-family: "Century Gothic", sans-serif;
+  text-align: center;
+}
+
+#score-block {
+  position: absolute;
+  margin-bottom: 5px;
+  right: 0;
+  bottom: 0;
+}
+
+#time, #score{
+  width: 30px;
+
+  border-width: 2px;
+}
+
+/* hole-field */
+#hole-field {
+  width: 310px;
+  height: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+
+  border: 1px solid gray;
+  border-left: none;
+  border-right: none;
+}
+
+.hole {
+  float: left;
+
+  width: 20px;
+  height: 20px;
+  margin: 4px;
+
+  border: 1px solid gray;
+  border-radius: 50px;
+  background-color: #F4F4F4;
+}
+
+.hole:hover {
+  cursor: pointer;
+}
+
+#mole {
+  width: 14px;
+  height: 14px;
+  border: 4px solid #0F88EB;
+}
+
+#mole-click {
+  width: 14px;
+  height: 14px;
+  border: 4px solid #F0F0F0;
+}
+
+#instruction {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 700px;
+}

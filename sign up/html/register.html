@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign up</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../css/sign.css">
+  <link rel="icon" type="image/gif" href="../img/icon.jpg">
+  <script src="../js/sign.js"></script>
+  <script src="../js/jquery.js"></script>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <div id="field">
+    <h1>Sign Up</h1>
+    <form method="post" action="http://localhost:8000" onsubmit="return check_isValid();">
+      <div id="sign-area">
+        <div class="row"><img alt="username" src="../img/user.png" class="psd"><input type="text" name="username" class="input-area" placeholder="Username" id="username" value=""/>
+        <div class="error-field" id="name-error"></div>
+        </div>
+        <div class="row"><img alt="id" src="../img/id.png" class="psd"><input type="text" name="id" class="input-area" placeholder="Student ID" id="id" value=""/>
+        <div class="error-field" id="id-error"></div>
+        </div>
+        <div class="row"><img alt="phone" src="../img/phone.png" class="psd"><input type="text" name="phone" class="input-area" placeholder="Phone" id="phone" value=""/>
+        <div class="error-field" id="phone-error"></div>
+        </div>
+        <div class="row"><img alt="email" src="../img/mail.png" class="psd"><input type="text" name="mail" class="input-area" placeholder="Email" id="mail" value=""/>
+        <div class="error-field" id="mail-error"></div>
+        </div>
+        <div id="button-field">
+          <input type="button" id="reset" value="reset" class="button" />
+          <input type="submit" value="sign up" class="button" />
+        </div>
+      </div>
+    </form>
+  </div>
+  <div id="tip">
+  </div>
+</body>
+</html>

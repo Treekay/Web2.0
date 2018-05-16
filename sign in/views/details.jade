@@ -1,0 +1,20 @@
+doctype html
+
+html
+  head
+    title Detail
+    meta(charset='UTF-8')
+    link(rel="stylesheet", type="text/css", href="/stylesheets/detail.css")
+    link(rel="icon", type="image/gif", href="/images/icon.jpg")
+    script(src="javascripts/jquery-3.2.1.min.js")
+    script(src="/javascripts/sign.js")
+  body
+    #field
+      h1 Details
+      ul#sign-area
+        li.row 用户名#{data.username}
+        li.row 学号#{data.schoolId}
+        li.row 电话#{data.phone}
+        li.row 邮箱#{data.email}
+      #back
+        a(href="./out") 退出

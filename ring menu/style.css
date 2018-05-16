@@ -1,0 +1,272 @@
+/*the position of the whole area*/
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+}
+
+#at-plus-container {
+  position: relative;
+
+  width: 180px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#bottom-positioner {
+  position: absolute;
+  bottom: 0;
+
+  width: 180px;
+  height: 220px;
+}
+
+/*-------button-------*/
+#button {
+  width: 26px;
+  height: 26px;
+  margin: 97px 77px;
+}
+
+#button:hover {
+  width: 50px;
+  height: 50px;
+  margin: 85px 65px;
+}
+
+/*-------info bar-------*/
+#info-bar {
+  position: absolute;
+  bottom: 97px;
+  left: 77px;
+
+  width: 26px;
+  height: 26px;
+  
+  border-radius: 50%;
+
+  opacity: 0;
+  transition: all .5s;
+}
+
+#button:hover #info-bar {
+  bottom: 150px;
+  left: 25px;
+
+  width: 130px;
+  height: 130px;
+  
+  border-radius: 50%;
+  background-color: #777777;
+
+  opacity: 1;
+}
+
+#info-bar ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+#info-bar li {
+  position: static;
+
+  width: 26px;
+  height: 26px;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 10px;
+
+  color: white;
+  text-align: center;
+  list-style: none;
+
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transition: all .5s;
+  opacity: 0;
+}
+
+#button:hover #info-bar li {
+  width: 50%;
+  
+  opacity: 1;
+}
+
+#button:hover #info-bar li img {
+  vertical-align: middle;
+}
+
+#info-bar li span {
+  margin-left:  8px;
+}
+
+#info-bar li.user, #info-bar li.mine, #info-bar li.comment {
+  font-size: 0px;
+}
+
+#button:hover #info-bar li.user, #button:hover #info-bar li.mine {
+  font-size: 15px;
+}
+
+#button:hover #info-bar li.comment {
+  font-size: 30px;
+}
+
+#info-bar li.mine {
+  display: inline-block;
+
+  width: 50%;
+
+  color: #079E6E;
+}
+
+/*-------control ring -------*/
+#control-ring-container {
+  position: absolute;
+  left: 77px;
+  top: 97px;
+
+  width: 26px;
+  height: 26px;
+
+  transition: all .5s;
+}
+
+#button:hover #control-ring-container {
+  position: absolute;
+  left: 0;
+  top: 20px;
+
+  width: 180px;
+  height: 180px;
+}
+
+#control-ring {
+  padding: 0;
+  margin: 0;
+}
+
+#control-ring li {
+  position: absolute;
+
+  width: 26px;
+  height: 26px;
+  margin: 0;
+
+  list-style: none;
+
+  border-radius: 50%;
+  background-color: #707070;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+
+  transition: all .5s;
+  opacity: 0;
+}
+
+#button:hover #control-ring li {
+  opacity: 1;
+  width: 32px;
+  height: 32px;
+}
+
+#button:hover #control-ring .mask {
+  margin-top: 35px;
+  margin-left: 10px;
+
+  background-image: url('assets/images/nomask.png');
+}
+
+#button:hover #control-ring .history {
+  margin-top: 75px;
+  margin-left: 0px;
+
+  background-image: url('assets/images/history.png');
+}
+
+#button:hover #control-ring .message {
+  margin-top: 120px;
+  margin-left: 15px;
+
+  background-image: url('assets/images/message.png');
+}
+
+#button:hover #control-ring .setting {
+  margin-top: 145px;
+  margin-left: 55px;
+
+  background-image: url('assets/images/setting.png');
+}
+
+#button:hover #control-ring .sign {
+  margin-top: 143px;
+  margin-left: 100px;
+
+  background-image: url('assets/images/signin.png');
+}
+
+#control-ring .unread {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+  color: white;
+
+  border-radius: 50%;
+  background-color: red;
+
+  opacity: 0;
+  transition: all .5s;
+}
+
+#button:hover #control-ring .unread {
+  opacity: 1;
+}
+
+/*-------apb-------*/
+.apb {
+  position: absolute;
+  bottom: 97px;
+  left: 77px;
+
+  width: 26px;
+  height: 26px;
+  
+  border-radius: 50%;
+  background-image: url('assets/images/atplus_white.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px 15px;
+  background-color: #989FCF;
+
+  transition: all .5s;
+  transition-delay: .5s;
+}
+
+#button:hover .apb {
+  position: absolute;
+  bottom: 85px;
+  left: 65px;
+
+  width: 50px;
+  height: 50px;
+  
+  background-image: url('assets/images/atplus_green.png');
+  background-size: 40px 30px;
+  background-color: rgba(48, 63, 159, 1);
+
+  transition-delay: 0s;
+}

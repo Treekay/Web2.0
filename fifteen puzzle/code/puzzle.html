@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>fifteen puzzle</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="puzzle.css">
+  <link rel="icon" type="image/gif" href="../image/icon.jpg">
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="puzzle.js"></script>
+</head>
+<body>
+  <h1 id="headline">Puzzle Game</h1>
+  <div id="result"></div>
+  <div id="puzzle"></div>
+  <div id="scoreboard">Your Best Game History:<br/>
+    <p id="easy-history">easy: none</p>
+    <p id="middle-history">middle: none</p>
+    <p id="hard-history">hard: none</p>
+  </div>
+  <div id="show-picture" class="show-picture0"></div>
+  <div id="control-field">
+    <button id="mode" class="free">mode</button>
+    <div id="difficulty">
+      <button id="three" class="select">3×3</button>
+      <button id="four" class="select">4×4</button>
+      <button id="five" class="select">5×5</button>
+    </div>
+    <div id="control-bar">
+      <button id="start" class="control">Start</button>
+      <button id="stop" class="control">Stop</button>
+      <button id="change" class="control">Change</button>
+      <button id="recover" class="control">End</button>
+    </div>
+    <button id="time">Time</button>
+  </div>
+</body>
+</html>

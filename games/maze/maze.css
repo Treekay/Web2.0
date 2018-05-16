@@ -1,0 +1,222 @@
+html, body{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: "Century Gothic", sans-serif;
+}
+
+/* headline */
+#text-field {
+  height: 80px;
+
+  text-align: center;
+  font-size: 20px;
+}
+
+#text-field #title{
+  font-size: 32px;
+  font-weight: middle;
+}
+
+#text-field p {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+/* tip */
+#status {
+  float: right;
+
+  height: 50px;
+  width: 150px;
+
+  border-radius: 20px;
+  background-color: lightgray;
+
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+}
+
+/* output */
+.result {
+  height: 50px;
+  margin: 0;
+
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  color: red;
+
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.shade {
+  height: 50px;
+  margin: 0;
+
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  color: red;
+
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+/* maze */
+#maze-field {
+  position: relative;
+
+  width: 550px;
+  height: 510px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#maze {
+  position: absolute;
+  left: 25px;
+  width: 500px;
+  height: 340px;
+}
+
+/* wall */
+.wall {
+  position: absolute;
+
+  background-color: #F0F0F0;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
+
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+
+#wall-top {
+  top: 0;
+  left: 0;
+  width: 498px;
+  height: 60px;
+}
+
+#wall-left {
+  top: 60px;
+  left: 0;
+  width: 148px;
+  height: 169px;
+
+  border-top: none;
+}
+
+#wall-right {
+  top: 60px;
+  right: 0px;
+  width: 148px;
+  height: 169px;
+
+  border-top: none;
+}
+
+#wall-bottom {
+  top: 280px;
+  left: 0;
+  width: 498px;
+  height: 50px;
+}
+
+#wall-center {
+  top: 110px;
+  left: 200px;
+  width: 100px;
+  height: 171px;
+
+  border-bottom: none;
+}
+
+/* bottom tip */
+#tip-field {
+  position: relative;
+  top: 360px;
+  width: 600px;
+}
+
+#wall-show {
+  width: 80px;
+  height: 20px;
+  left: 225px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* start and end */
+.operator {
+  position: absolute;
+
+  width: 45px;
+  height: 45px;
+  margin: 0;
+  padding: 0;
+
+  border-color: gray;
+  border-style: solid;
+  border-width: 1px;
+
+  font-size: 35px;
+  text-align: center;
+  line-height: 45px;
+
+  display: inline-block;
+}
+
+#start {
+  left: 0;
+  top: 232px;
+
+  background-color: lightgreen;
+  opacity: .8;
+}
+
+#end {
+  right: 0;
+  top: 232px;
+
+  background-color: rgb(134, 131, 254);
+  opacity: .8;
+}
+
+#start:hover {
+  cursor: pointer;
+
+  opacity: 1;
+}
+
+#end:hover {
+  cursor: pointer;
+
+  opacity: 1;
+}
+
+/* test cheat */
+#test {
+  position: absolute;
+  width: 50px;
+  height: 100px;
+  top: 200px;
+  left: -26px;
+}
+
+/* crack wall */
+.crack-wall {
+  position: absolute;
+
+  background-color: red;
+  border-color: gray;
+  border-style: solid;
+  border-width: 1px;
+
+  display: inline-block;
+}

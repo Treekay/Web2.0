@@ -1,0 +1,151 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+  color: #55ABED;
+  font-family: "Century Gothic", sans-serif;
+  background-image: url(../images/bg.jpg);
+  background-size: 100%;
+}
+
+#regist {
+  text-align: end;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#topError {
+  color: chocolate;
+  font-size: 14pt;
+  font-weight: bold;
+  margin-bottom: 10px;
+  height: 26px;
+}
+
+#field {
+  position: relative;
+  top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  height: 480px;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 1px;
+  border-color: lightgray;
+  background-color: white;
+  box-shadow: 0 0 20px 1px #F0F0F0;
+  opacity: .8;
+}
+
+span {
+  position: absolute;
+  top: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.error {
+  text-align: center;
+
+  margin: 0 auto;
+  width: 100%;
+  height: 30px;
+
+  color: #CC3333;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+#sign-area {
+  position: relative;
+  margin: 0 auto;
+  width: 280px;
+  height: 180px;
+}
+
+input {
+  outline: none;
+}
+
+.row {
+  width: 100%;
+  height: 52px;
+  color: gray;
+  opacity: 1;
+}
+
+.psd {
+  width: 22px;
+  height: 22px;
+}
+
+.data {
+  position: absolute;
+  right: 0;
+  height: 25px;
+  width: 240px;
+  border-style: solid;
+  border-width: thin;
+  border-color: lightgray;
+  border-radius: 3px;
+  transition: all .5s;
+}
+
+.data:focus {
+  box-shadow: 0 0 2px 2px #0F88EB;
+}
+
+.loadto {
+  color: #0F88EB;
+  float: right;
+  font-size: 15px;
+  text-decoration-line: none;
+}
+
+#button-field {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.button, #back {
+  text-align: center;
+  width: 100px;
+  height: 30px;
+
+  border-radius: 10px;
+  border-style: none;
+
+  font-size: 15px;
+  color: white;
+  background-color: #55ABED;
+  box-shadow: 2px 2px 5px gray;
+  opacity: .9;
+}
+
+.button {
+  margin: 5px;
+}
+
+#back {
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.button:hover , #back:hover{
+  cursor: pointer;
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+ul {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}

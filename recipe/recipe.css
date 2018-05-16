@@ -1,0 +1,61 @@
+body{
+  background-image: url(https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg);
+  background-attachment: fixed;
+  background-color: white;
+  font-family: Georgia, Garamond, serif;
+  color: rgb(64, 64, 64);
+  font-size: 11pt;
+}
+
+/*img without border*/
+img{
+  border: 0;
+  padding: 0;
+}
+
+/*change the logo of the point before the unordered list*/
+ul{
+  list-style-image: url(https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif);
+}
+
+/*keep the color of the link*/
+#Links a:link, a:visited{
+  color: rgb(164, 164, 0);
+}
+
+
+/*Content Style*/
+#WebTitle{
+  color: rgb(164, 164, 0);
+  background-color: rgb(240, 240, 240);
+  font-family: "Century Gothic", Futura, Verdana, serif;
+  text-align: center;
+  font-size: 22pt;
+  text-decoration: underline;
+  letter-spacing: 0.2em;
+}
+
+.PhaseTitle{
+  color: rgb(164, 164, 0);
+  background-color: rgb(240, 240, 240);
+  font-family: "Century Gothic", Futura, Verdana, serif;
+  text-align: left;
+  font-size: 18pt;
+  font-weight: normal;
+  text-decoration: underline;
+  letter-spacing: 0.2em;
+}
+
+/*strong font of four major steps of the recipe direction*/
+.StrongFont{
+  font-weight: bold;
+}
+
+.comments{
+  background-color: rgb(255, 255, 200);
+  font-style: italic;
+}
+
+.linkW3C{
+  display: inline;
+}

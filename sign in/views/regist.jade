@@ -1,0 +1,55 @@
+doctype html
+
+html
+  head
+    title Regist
+    meta(charset='UTF-8')
+    link(rel="stylesheet", type="text/css", href="/stylesheets/regist.css")
+    link(rel="icon", type="image/gif", href="/images/icon.jpg")
+    script(src="javascripts/jquery-3.2.1.min.js")
+    script(src="/javascripts/sign.js")
+  body
+  #field
+    h1 Regist
+    form#sign-area(action="/regist" method="post")
+      .row
+        label(for="username")
+          img.psd(alt="username", src="/images/user.png")
+        input#username.data(type="text", name="username", placeholder="Username", value="#{data.username}")       
+        .error #{errorMsg.username}
+      .row
+        label(for="password")
+          img.psd(alt="lockon", src="images/lockon.jpg")
+        input#password.data(type="password", name="password", placeholder="Password", value="#{data.password}")
+        .error #{errorMsg.password}
+      .row
+        label(for="repeatPsd")
+          img.psd(alt="lockoff", src="images/lockoff.jpg")
+        input#repeatPsd.data(type="password", name="repeatPsd", placeholder="Input the password again", value="#{data.repeatPsd}")
+        .error #{errorMsg.repeatPsd}     
+      .row
+        label(for="schoolId")
+          img.psd(alt="id", src="/images/id.png")
+        input#schoolId.data(type="text", name="schoolId", placeholder="Student ID", value="#{data.schoolId}")         
+        .error #{errorMsg.schoolId}    
+      .row
+        label(for="phone")
+          img.psd(alt="phone", src="/images/phone.png")
+        input#phone.data(type="text", name="phone", placeholder="Phone", value="#{data.phone}")        
+        .error #{errorMsg.phone}      
+      .row
+        label(for="email")
+          img.psd(alt="email", src="/images/mail.png")
+        input#email.data(type="text", name="email", placeholder="Email", value="#{data.email}")       
+        .error #{errorMsg.email}
+      #button-field
+        input#reset.button(type="submit" value="注册")
+        input.button(type="reset" value="重置")
+      div
+        a.loadto(href="./login") login
+ul NOTE:
+  li 用户名6~18位英文字母、数字或下划线，必须以英文字母开头
+  li 密码为6~12位数字、大小写字母、中划线、下划线
+  li 学号8位数字，不能以0开头
+  li 电话11位数字，不能以0开头
+  li 邮箱格式：name@address.com

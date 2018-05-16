@@ -1,0 +1,134 @@
+body{
+  background-image: url(http://my.ss.sysu.edu.cn/wiki/download/attachments/7045968/background.png?version=1&modificationDate=1268896312000);
+  font-size: 8pt;
+  font-family: Verdana, Tahoma, sans-serif;
+  margin: 0;
+}
+
+#banner{
+  background-image: url(http://my.ss.sysu.edu.cn/wiki/download/attachments/7045968/bannerbackground.png?version=1&modificationDate=1268896312000);
+  text-align: center;
+  height: 50px;
+}
+
+#headline{
+  font-size: 24pt;
+  text-align: center;
+  font-family: Tahoma, Verdana, sans-serif;
+}
+
+#article{
+  border-style: solid;
+  border-width: 4px;
+  border-color: gray;
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+  display: table; 
+}
+
+#poster{
+  background-color: #A2B964;
+  width: 250px;
+  float: right;
+}
+
+#summary{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 1em;
+  font-family: Arial, sans-serif;
+}
+
+#summary dt{
+  font-weight: bold;
+}
+
+#Rotten{
+  background-image: url(http://my.ss.sysu.edu.cn/wiki/download/attachments/7045968/rottenbackground.png?version=1&modificationDate=1268896385000);
+  text-align: left;
+  height: 83px;
+  color: white;
+}
+
+#pic, #txt{
+  float: left;
+}
+
+#txt p{
+  margin-top: 6px;
+  margin-left: 5px;
+}
+
+#Rotten span{
+  font-size: 48pt;
+  color: red;
+  font-weight: bold;
+}
+
+.content q{
+  font-weight: bold;
+}
+
+.content p{
+  margin: 0;
+  display: inline-block;
+}
+.content img, .customer img{
+  float: left;
+  margin-right: 5px;
+}
+
+.content{
+  border-style: solid;
+  border-width: 2px;
+  border-color: gray;
+  background-color: #E1D697;
+  padding: 8px;
+}
+
+.customer{
+  margin-bottom: 3em;
+}
+
+.customer p{
+  width: 238.5px;
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+.customer .italic{
+  font-style: italic;
+}
+
+#column-left{
+  width: 258.5px;
+  float: left;
+  margin-bottom: 0;
+  padding-left: 11px;
+}
+
+#column-right{
+  width: 258.5px;
+  float: right;
+  margin-bottom: 0;
+  padding-right: 11px;
+}
+
+#page{
+  background-color: #A2B964;
+  padding: 5px;
+  text-align: center;
+  clear: both;
+}
+
+#page p{
+  margin: 0;
+}
+
+#W3{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+

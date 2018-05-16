@@ -1,0 +1,610 @@
+/*---页面布局---*/
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+  background-color: #D8E3D8;
+}
+
+button {
+  outline: none;
+}
+
+/*---标题居中---*/
+#headline {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*---结果区域---*/
+#result {
+  text-align: center;
+  margin: 0 auto;
+
+  height: 40px;
+
+  font-size: 20px;
+  font-family: Courier, Arial, sans-serif;
+
+  transition: all 0.5s ease-in-out;
+}
+
+/*---拼图区域---*/
+#puzzle {
+  position: relative;
+  margin: 0 auto 5px auto;
+
+  width: 350px;
+  height: 350px;
+}
+
+/*积分板*/
+#scoreboard {
+  position: absolute;
+  padding: 5px;
+  right: 80px;
+  top: 200px;
+
+  height: 200px;
+  width: 250px;
+
+  border-radius: 20px;
+  background-size: 200px 200px;
+  background-color: #D8E3E0;
+  border: solid lightgray;
+
+  font-family: "Century Gothic", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+/*展示图片*/
+.show-picture0, .show-picture1, .show-picture2, .show-picture3, .show-picture4 {
+  position: absolute;
+  left: 100px;
+  top: 200px;
+
+  height: 200px;
+  width: 200px;
+
+  background-size: 200px 200px;
+  border: solid lightgray;
+}
+
+.show-picture0 {
+  background-image: url('../image/拉布拉多.jpg');
+}
+
+.show-picture1 {
+  background-image: url('../image/柴犬.jpg');
+}
+
+.show-picture2 {
+  background-image: url('../image/金毛.jpg');
+}
+
+.show-picture3 {
+  background-image: url('../image/柯基.jpg');
+}
+
+.show-picture4 {
+  background-image: url('../image/阿拉斯加.jpg');
+}
+/*拼图背景*/
+.partsize3-picture0, .partsize4-picture0, .partsize5-picture0,
+.partsize3-picture1, .partsize4-picture1, .partsize5-picture1,
+.partsize3-picture2, .partsize4-picture2, .partsize5-picture2,
+.partsize3-picture3, .partsize4-picture3, .partsize5-picture3,
+.partsize3-picture4, .partsize4-picture4, .partsize5-picture4 {
+  position: absolute;
+  margin: 0;
+
+  background-size: 350px 350px;
+  border: solid 1px lightgray;
+
+  transition: all .2s;
+}
+.partsize3-picture0, .partsize4-picture0, .partsize5-picture0 {
+  background-image: url('../image/拉布拉多.jpg');
+}
+
+.partsize3-picture1, .partsize4-picture1, .partsize5-picture1 {
+  background-image: url('../image/柴犬.jpg');
+}
+
+.partsize3-picture2, .partsize4-picture2, .partsize5-picture2 {
+  background-image: url('../image/金毛.jpg');
+}
+
+.partsize3-picture3, .partsize4-picture3, .partsize5-picture3 {
+  background-image: url('../image/柯基.jpg');
+}
+
+.partsize3-picture4, .partsize4-picture4, .partsize5-picture4 {
+  background-image: url('../image/阿拉斯加.jpg');
+}
+
+.partsize3-picture0:hover, .partsize3-picture1:hover, .partsize3-picture2:hover , .partsize3-picture3:hover, .partsize3-picture4:hover,
+.partsize4-picture0:hover, .partsize4-picture1:hover, .partsize4-picture2:hover , .partsize4-picture3:hover, .partsize4-picture4:hover,
+.partsize5-picture0:hover, .partsize5-picture1:hover, .partsize5-picture2:hover , .partsize5-picture3:hover, .partsize5-picture4:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+/*拼图划分*/
+
+/*easy*/
+.partsize3-picture0, .partsize3-picture1, .partsize3-picture2, .partsize3-picture3, .partsize3-picture4 {
+  width: 114px;
+  height: 114px;
+}
+
+/*middle*/
+.partsize4-picture0, .partsize4-picture1, .partsize4-picture2, .partsize4-picture3, .partsize4-picture4 {
+  width: 85px;
+  height: 85px;
+}
+
+/*hard*/
+.partsize5-picture0, .partsize5-picture1, .partsize5-picture2, .partsize5-picture3, .partsize5-picture4 {
+  width: 68px;
+  height: 68px;
+}
+
+/*---拼图分块---*/
+
+/*level easy*/
+#partsize3-1 {
+  background-position: 0 0;
+}
+
+#partsize3-2 {
+  background-position: -116px 0;
+}
+
+#partsize3-3 {
+  background-position: -232px 0;
+}
+
+#partsize3-4 {
+  background-position: 0 -116px;
+}
+
+#partsize3-5 {
+  background-position: -116px -116px;
+}
+
+#partsize3-6 {
+  background-position: -232px -116px;
+}
+
+#partsize3-7 {
+  background-position: 0 -232px;
+}
+
+#partsize3-8 {
+  background-position: -116px -232px;
+}
+
+#partsize3-9 {
+  background-position: -232px -232px;
+  opacity: 0;
+}
+
+#partsize3-9:hover {
+  cursor: default;
+}
+
+/*level middle*/
+#partsize4-1 {
+  background-position: 0 0;
+}
+
+#partsize4-2 {
+  background-position: -87px 0;
+}
+
+#partsize4-3 {
+  background-position: -174px 0;
+}
+
+#partsize4-4 {
+  background-position: -261px 0;
+}
+
+#partsize4-5 {
+  background-position: 0 -87px;
+}
+
+#partsize4-6 {
+  background-position: -87px -87px;
+}
+
+#partsize4-7 {
+  background-position: -174px -87px;
+}
+
+#partsize4-8 {
+  background-position: -261px -87px; 
+}
+
+#partsize4-9 {
+  background-position: 0 -174px;
+}
+
+#partsize4-10 {
+  background-position: -87px -174px;
+}
+
+#partsize4-11 {
+  background-position: -174px -174px;
+}
+
+#partsize4-12 {
+  background-position: -261px -174px;
+}
+
+#partsize4-13 {
+  background-position: 0 -261px;
+}
+
+#partsize4-14 {
+  background-position: -87px -261px;
+}
+
+#partsize4-15 {
+  background-position: -174px -261px;
+}
+
+#partsize4-16 {
+  background-position: -261px -261px;
+  opacity: 0;
+}
+
+#partsize4-16:hover {
+  cursor: default;
+}
+
+/*level hard*/
+#partsize5-1 {
+  background-position: 0 0;
+}
+
+#partsize5-2 {
+  background-position: -70px 0;
+}
+
+#partsize5-3 {
+  background-position: -140px 0;
+}
+
+#partsize5-4 {
+  background-position: -210px 0;
+}
+
+#partsize5-5 {
+  background-position: -280px 0;
+}
+
+#partsize5-6 {
+  background-position: 0 -70px;
+}
+
+#partsize5-7 {
+  background-position: -70px -70px;
+}
+
+#partsize5-8 {
+  background-position: -140px -70px;
+}
+
+#partsize5-9 {
+  background-position: -210px -70px;
+}
+
+#partsize5-10 {
+  background-position: -280px -70px;
+}
+
+#partsize5-11 {
+  background-position: 0 -140px;
+}
+
+#partsize5-12 {
+  background-position: -70px -140px;
+}
+
+#partsize5-13 {
+  background-position: -140px -140px;
+}
+
+#partsize5-14 {
+  background-position: -210px -140px;
+}
+
+#partsize5-15 {
+  background-position: -280px -140px;
+}
+
+#partsize5-16 {
+  background-position: 0 -210px;
+}
+
+#partsize5-17 {
+  background-position: -70px -210px;
+}
+
+#partsize5-18 {
+  background-position: -140px -210px;
+}
+
+#partsize5-19 {
+  background-position: -210px -210px;
+}
+
+#partsize5-20 {
+  background-position: -280px -210px;
+}
+
+#partsize5-21 {
+  background-position: 0 -280px;
+}
+
+#partsize5-22 {
+  background-position: -70px -280px;
+}
+
+#partsize5-23 {
+  background-position: -140px -280px;
+}
+
+#partsize5-24 {
+  background-position: -210px -280px;
+}
+
+#partsize5-25 {
+  background-position: -280px -280px;
+  opacity: 0;
+}
+
+#partsize5-25:hover {
+  cursor: default;
+}
+
+/*---拼图分布---*/
+
+/*---分行---*/
+
+/*3*3*/
+.partsize3-position1, .partsize3-position2, .partsize3-position3 {
+  top: 0;
+}
+
+.partsize3-position4, .partsize3-position5, .partsize3-position6 {
+  top: 116px;
+}
+
+.partsize3-position7, .partsize3-position8, .partsize3-position9 {
+  top: 232px;
+}
+
+/*4*4*/
+.partsize4-position1, .partsize4-position2 , .partsize4-position3, .partsize4-position4{
+  top: 0;
+}
+
+.partsize4-position5, .partsize4-position6, .partsize4-position7, .partsize4-position8 {
+  top: 87px;
+}
+
+.partsize4-position9, .partsize4-position10, .partsize4-position11, .partsize4-position12 {
+  top: 174px;
+}
+
+.partsize4-position13, .partsize4-position14, .partsize4-position15, .partsize4-position16 {
+  top: 261px;
+}
+
+/*5*5*/
+.partsize5-position1, .partsize5-position2, .partsize5-position3, .partsize5-position4, .partsize5-position5 {
+  top: 0;
+}
+
+.partsize5-position6, .partsize5-position7, .partsize5-position8, .partsize5-position9, .partsize5-position10 {
+  top: 70px;
+}
+
+.partsize5-position11, .partsize5-position12, .partsize5-position13, .partsize5-position14, .partsize5-position15 {
+  top: 140px;
+}
+
+.partsize5-position16, .partsize5-position17, .partsize5-position18, .partsize5-position19, .partsize5-position20 {
+  top: 210px;
+}
+
+.partsize5-position21, .partsize5-position22, .partsize5-position23, .partsize5-position24, .partsize5-position25 {
+  top: 280px;
+}
+
+/*---分列---*/
+
+/*3*3*/
+.partsize3-position1, .partsize3-position4, .partsize3-position7 {
+  left: 0;
+}
+
+.partsize3-position2, .partsize3-position5, .partsize3-position8 {
+  left: 116px;
+}
+
+.partsize3-position3, .partsize3-position6, .partsize3-position9 {
+  left: 232px;
+}
+
+/*4*4*/
+.partsize4-position1, .partsize4-position5, .partsize4-position9, .partsize4-position13 {
+  left: 0;
+}
+
+.partsize4-position2, .partsize4-position6, .partsize4-position10, .partsize4-position14 {
+  left: 87px;
+}
+
+.partsize4-position3, .partsize4-position7, .partsize4-position11, .partsize4-position15 {
+  left: 174px;
+}
+
+.partsize4-position4, .partsize4-position8, .partsize4-position12, .partsize4-position16 {
+  left: 261px;
+}
+
+/*5*5*/
+.partsize5-position1, .partsize5-position6, .partsize5-position11, .partsize5-position16, .partsize5-position21 {
+  left: 0;
+}
+
+.partsize5-position2, .partsize5-position7, .partsize5-position12, .partsize5-position17, .partsize5-position22 {
+  left: 70px;
+}
+
+.partsize5-position3, .partsize5-position8, .partsize5-position13, .partsize5-position18, .partsize5-position23 {
+  left: 140px;
+}
+
+.partsize5-position4, .partsize5-position9, .partsize5-position14, .partsize5-position19, .partsize5-position24 {
+  left: 210px;
+}
+
+.partsize5-position5, .partsize5-position10, .partsize5-position15, .partsize5-position20, .partsize5-position25 {
+  left: 280px;
+}
+
+/*---开始按钮---*/
+#control-field {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 500px;
+  height: 180px;
+}
+
+#difficulty {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 350px;
+  height: 60px;
+  text-align: center;
+}
+
+.select {
+  display: inline-block;
+  margin: 8px 10px 8px 10px;
+
+  width: 80px;
+  height: 40px;
+
+  background-color: #75B5BB;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #888888;
+
+  color: white;
+  font-size: 18px;
+  font-family: "Century Gothic", sans-serif;
+  text-align: center;
+  line-height: 40px;
+
+  opacity: .8;
+}
+
+#control-bar {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 300px;
+  height: 120px;
+  text-align: center;
+}
+
+.control {
+  display: inline-block;
+  margin: 8px 10px 8px 10px;
+
+  width: 100px;
+  height: 40px;
+
+  background-color: #75B5BB;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #888888;
+
+  color: white;
+  font-size: 18px;
+  font-family: "Century Gothic", sans-serif;
+  text-align: center;
+  line-height: 40px;
+
+  opacity: .8;
+}
+
+.control:hover, .select:hover {
+  opacity: 1;
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+#mode, #time {
+  position: absolute;
+  display: inline-block;
+  margin: 10px;
+  bottom: 30%;
+
+  width: 68px;
+  height: 68px;
+
+  border-radius: 50px;
+  border-style: unset;
+
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Century Gothic", sans-serif;
+  text-align: center;
+  line-height: 60px;
+}
+
+#mode {
+  left: 0;
+  opacity: .8;
+}
+
+#mode:hover {
+  opacity: 1;
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+#time {
+  right: 0;
+  background-color: #BEB58E;
+  box-shadow: 0 0 5px 5px #BEB58E;
+}
+
+.free {
+  background-color: #8ACABC;
+  box-shadow: 0 0 5px 5px #8ACABC;;
+}
+
+.limit {
+  background-color: #4E999C;
+  box-shadow: 0 0 5px 5px #4E999C;
+}
+
+.rapid {
+  background-color: #1A647F;
+  box-shadow: 0 0 5px 5px #1A647F;
+}

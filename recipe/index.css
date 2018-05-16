@@ -1,0 +1,78 @@
+body{
+  background: url(http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg) white;
+  color: rgb(164, 164, 0);
+  font-family: "Century Gothic", Futura, Verdana, serif;
+}
+
+/*Headline Style*/
+#RecipeLogo{
+  text-decoration: none;
+  font-size: 30pt;
+  color: white;
+  border-radius: 50%;
+  background-color: rgb(164, 164, 0);
+  text-align: center;
+  float: left;
+}
+
+#Headline{
+  color: rgb(164, 164, 0);
+  font-size: 30pt;
+  display: inline;
+}
+
+/*Content Style*/
+#PiePicture{
+  border: 1px; 
+  width: 300px; 
+  height: 100px;
+  float: left;
+}
+
+#PiePicture img{
+  width: 300px; 
+  height: 500px;
+}
+
+#Content{
+  position: absolute;
+  left: 35%;
+  top: 18%;
+  font-size: 20pt;
+}
+
+#Content ul{
+  list-style-image: url(https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif);
+}
+
+#AnotherPie{
+  border: 1px; 
+  width: 300px; 
+  height: 100px;
+  position: absolute;
+  left: 68%;
+  top: 18%;
+}
+
+#AnotherPie img{
+  width: 400px; 
+  height: 300px;
+}
+
+#LinkTip{
+  position: absolute;
+  left: 35%;
+  top: 80%;
+}
+
+#LinkButton{
+  float: right;
+  font-size: 15pt;
+}
+
+#LinkButton a{
+  color: white;
+  font-size: 15pt;
+  border-radius: 20px;
+  background-color: rgb(164, 164, 0);
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Simple Caculator</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="outlooking.css">
+      <link href="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3769137495,1031451634&fm=27&gp=0.jpg" type="image/gif" rel="icon">
+      <script type="text/javascript" src="cacuScript.js"></script>
+    </head>
+
+    <body>
+      <div id="caculator">
+        <button id="tip" onclick="readme()">R</button>
+        <div id="headline">Simple Caculator</div>
+        <div id="empty_field"></div>
+        <div id="output_field">
+          <input type="text" id="output" value=" " readonly="readonly">
+        </div>
+        <div id="button_field">
+          <table>
+            <tr> 
+              <td><button value="7" id="7" class="num">7</button></td>
+              <td><button value="8" id="8" class="num">8</button></td>
+              <td><button value="9" id="9" class="num">9</button></td>
+              <td><button value="/" id="/" class="operator">/</button></td>
+            </tr>
+            <tr>
+              <td><button value="4" id="4" class="num">4</button></td>
+              <td><button value="5" id="5" class="num">5</button></td>
+              <td><button value="6" id="6" class="num">6</button></td>
+              <td><button value="*" id="*" class="operator">*</button></td>
+            </tr>
+            <tr>
+              <td><button value="1" id="1" class="num">1</button></td>
+              <td><button value="2" id="2" class="num">2</button></td>
+              <td><button value="3" id="3" class="num">3</button></td>
+              <td><button value="-" id="-" class="operator">-</button></td>
+            </tr>
+            <tr>
+              <td><button value="0" id="0" class="num">0</button></td>
+              <td><button value="." id="." class="num">.</button></td>
+              <td><button value="←" id="←" class="clean">←</button></td>
+              <td><button value="+" id="+" class="operator">+</button></td>
+            </tr>
+            <tr>
+              <td><button value="(" id="(" class="num">(</button></td>
+              <td><button value=")" id=")" class="num">)</button></td>
+              <td><button value="CE" id="CE" class="clean">CE</button></td>
+              <td><button value="=" id="=" class="operator">=</button></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </body>
+  </html>
